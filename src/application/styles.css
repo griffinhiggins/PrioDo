@@ -1,0 +1,9 @@
+.chart-pie-label {
+	-fx-fill: #ffffff;
+	-fx-font-family: consolas;
+}
+.chart-title {
+	-fx-text-fill: #ffffff;
+	-fx-font-family: consolas;
+	-fx-padding: 40 0 -50 0;
+}

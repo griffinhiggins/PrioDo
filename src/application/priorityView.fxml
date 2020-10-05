@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="400.0" prefWidth="750.0" style="-fx-background-color:#000;" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.PriorityController">
+   <children>
+      <ListView fx:id="PRIORITY1LIST" layoutX="26.0" layoutY="61.0" prefHeight="229.0" prefWidth="226.0" />
+      <Label alignment="CENTER" layoutX="50.0" layoutY="27.0" prefHeight="17.0" prefWidth="179.0" text="Priority 1" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="28.0" />
+         </font>
+      </Label>
+      <ListView fx:id="PRIORITY2LIST" layoutX="262.0" layoutY="61.0" prefHeight="229.0" prefWidth="226.0" />
+      <Label alignment="CENTER" layoutX="286.0" layoutY="27.0" prefHeight="17.0" prefWidth="179.0" text="Priority 2" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="28.0" />
+         </font>
+      </Label>
+      <ListView fx:id="PRIORITY3LIST" layoutX="498.0" layoutY="61.0" prefHeight="229.0" prefWidth="226.0" />
+      <Label alignment="CENTER" layoutX="506.0" layoutY="27.0" prefHeight="17.0" prefWidth="179.0" text="Priority 3" textFill="WHITE">
+         <font>
+            <Font name="Consolas Bold" size="28.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="SCORE" onAction="#submitSettings" layoutX="284.0" layoutY="315.0" mnemonicParsing="false" text="Score" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="DAYS" onAction="#submitSettings" layoutX="348.0" layoutY="315.0" mnemonicParsing="false" text="Days" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="COURSE" onAction="#submitSettings" layoutX="214.0" layoutY="315.0" mnemonicParsing="false" text="Course" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="WEIGHT" onAction="#submitSettings" layoutX="502.0" layoutY="315.0" mnemonicParsing="false" text="Weight" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="DIFFICULTY" onAction="#submitSettings" layoutX="404.0" layoutY="315.0" mnemonicParsing="false" text="Difficulty" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font>
+      </CheckBox>
+   </children>
+</Pane>

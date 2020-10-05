@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="400.0" prefWidth="750.0" style="-fx-background-color: #000;" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.SettingsController">
+   <children>
+      <TextField fx:id="UPPER" layoutX="196.0" layoutY="95.0" prefHeight="27.0" prefWidth="45.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="62.0" layoutY="98.0" prefHeight="20.0" prefWidth="130.0" text="Upper Bound:" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="LOWER" layoutX="196.0" layoutY="141.0" prefHeight="27.0" prefWidth="45.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="62.0" layoutY="144.0" prefHeight="20.0" prefWidth="130.0" text="Lower Bound:" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="66.0" layoutY="56.0" prefHeight="20.0" prefWidth="130.0" text="Threshold" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="178.0" layoutY="193.0" mnemonicParsing="false" onAction="#submit" prefHeight="27.0" prefWidth="63.0" text="Submit">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

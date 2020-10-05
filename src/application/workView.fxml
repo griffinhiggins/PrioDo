@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="400.0" prefWidth="750.0" style="-fx-background-color:#000;" BorderPane.alignment="CENTER" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="application.WorkController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="328.0" layoutY="125.0" prefHeight="20.0" prefWidth="106.0" text="Work Type:" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="383.0" layoutY="56.0" prefHeight="26.0" prefWidth="167.0" text="ADD/MOD WORK" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="21.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="304.0" layoutY="190.0" prefHeight="20.0" prefWidth="130.0" text="Due Date:" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="304.0" layoutY="225.0" prefHeight="20.0" prefWidth="130.0" text="Difficulty:" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="560.0" layoutY="263.0" mnemonicParsing="false" onAction="#submit" prefHeight="27.0" prefWidth="63.0" text="Submit">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="501.0" layoutY="263.0" mnemonicParsing="false" onAction="#clear" prefHeight="27.0" prefWidth="53.0" text="Clear">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font>
+      </Button>
+      <ListView fx:id="WORKLIST" prefHeight="400.0" prefWidth="155.0" />
+      <Button layoutX="403.0" layoutY="263.0" mnemonicParsing="false" onAction="#delete" prefHeight="27.0" prefWidth="63.0" text="Delete">
+         <font>
+            <Font name="Consolas" size="13.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="WORKTYPE" layoutX="438.0" layoutY="122.0" prefHeight="27.0" prefWidth="106.0" />
+      <DatePicker fx:id="DUEDATE" layoutX="439.0" layoutY="187.0" prefHeight="27.0" prefWidth="106.0" />
+      <ChoiceBox fx:id="DIFFICULTY" layoutX="438.0" layoutY="222.0" prefHeight="27.0" prefWidth="106.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="328.0" layoutY="94.0" prefHeight="20.0" prefWidth="106.0" text="Work Name:" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NAME" layoutX="437.0" layoutY="91.0" prefHeight="27.0" prefWidth="186.0" />
+      <Label alignment="CENTER_RIGHT" layoutX="328.0" layoutY="157.0" prefHeight="20.0" prefWidth="106.0" text="Course:" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="16.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="COURSE" layoutX="438.0" layoutY="154.0" prefHeight="27.0" prefWidth="106.0" />
+   </children>
+</Pane>
